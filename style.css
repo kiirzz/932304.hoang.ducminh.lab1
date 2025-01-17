@@ -1,0 +1,204 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    width: 100vw;
+    margin: 0;
+    font-size: 0.9em;
+}
+
+header, footer {
+    background-color: green;
+    padding: 5px 0;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    margin: 12px 0;
+}
+
+h2 {
+    margin: 5px 0;
+}
+
+h3 {
+    margin: 0;
+}
+
+a {
+    color: red;
+}
+
+ul {
+    margin: 0;
+}
+
+.content {
+    width: 30%;
+    color: white;
+    background-color: blue;
+    box-sizing: border-box;
+    padding: 5px 20px;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    border: 5px solid white; 
+    margin: 0 15px 20px 0;
+    background-color: blue;
+    float: left;
+}
+
+.text {
+    flex: 1;
+    text-align: left;
+}
+
+.link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.list {
+    margin-bottom: 10px;
+}
+
+.list-title {
+    word-spacing: 10px;
+}
+
+.list-item {
+    margin: 5px 0;
+} 
+
+.list-item-2 {
+    letter-spacing: 5px;
+    color: skyblue;
+}
+
+.grid-box {
+    display: grid;
+    grid-template-areas: 
+        "box-1 box-2"
+        "box-3 box-4";
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 3fr 1fr;
+}
+
+.style {
+    grid-area: box-1;
+}
+
+.style-el {
+    margin: 8px 0;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.underlined {
+    text-decoration: underline;
+}
+
+.line-through-box {
+    grid-area: box-3;
+}
+
+.line-through {
+    text-decoration: line-through;
+}
+
+.right-box {
+    grid-area: box-2;
+}
+
+.grid {
+    display: grid;
+    grid-template-areas:
+        "item-1 item-2 item-3"
+        "item-1 item-4 item-5"
+        "item-6 item-7 item-7";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 3px;
+    border: 1px solid white;
+    height: 100px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 3px;
+}
+
+.item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    border: 1px solid white;
+}
+
+.item-1 {
+    grid-area: item-1;
+    background-color: green;
+    align-items: end;
+}
+
+.item-2 {
+    grid-area: item-2;
+    background-color: blue;
+}
+
+.item-3 {
+    grid-area: item-3;
+    background-color: blue;
+}
+
+.item-4 {
+    grid-area: item-4;
+    background-color: blue;
+}
+
+.item-5 {
+    grid-area: item-5;
+    background-color: blue;
+}
+
+.item-6 {
+    grid-area: item-6;
+    background-color: blue;
+}
+
+.item-7 {
+    grid-area: item-7;
+    background-color: red;
+}
+
+.icon-box {
+    grid-area: box-4;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+.icon {
+    height: 18px;
+}
